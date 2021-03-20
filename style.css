@@ -20,6 +20,10 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
+.glide {
+  /* margin-top: -150px; */
+}
+
 h1 {
   font-size: 60px;
   background: #f2f2f2;
@@ -47,6 +51,11 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.glide,
+h2 {
+  margin-top: 60px;
 }
 
 .double-panel > .left {
