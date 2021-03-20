@@ -39,18 +39,19 @@ h2 {
 .double-panel {
   margin-top: 120px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .double-panel > .left {
-  width: 37%;
-  margin-right: 3%;
-  box-sizing: border-box;
+  /* width: 37%;
+  margin-right: 3%; */
 }
 
 .double-panel > .right {
-  width: 60%;
-  /* max-width: 50vw; */
+  /* width: 60%; */
+  width: 100%;
 }
 
 .intro-container {
@@ -68,6 +69,7 @@ h2 {
 
 .video-container {
   max-width: 100%;
+  position: relative;
 }
 
 img,
@@ -87,4 +89,44 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.section {
+  background: #333;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.down-arrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.down-arrow::before {
+  animation: bounce 1s ease infinite;
+  bottom: 2rem;
+  color: #fff;
+  font-family: sans-serif;
+  content: "╲╱";
+  font-size: 3rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  font-weight: bold;
+  margin-left: -3rem;
+  opacity: 1;
+  position: absolute;
+  /* bottom: 100px; */
+  bottom: 0;
+  text-align: center;
+  width: 6rem;
+  z-index: 20;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
 }
