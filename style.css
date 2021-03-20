@@ -10,9 +10,14 @@ h2,
 h3,
 h4,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   font-size: 28px;
+}
+
+h2,
+h1 {
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -31,7 +36,7 @@ h2 {
 
 .main {
   margin-top: 50px;
-  width: 90vw;
+  width: 80vw;
   max-width: 1600px;
   margin: auto;
 }
