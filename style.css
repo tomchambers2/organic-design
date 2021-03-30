@@ -20,14 +20,15 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-.glide {
-  /* margin-top: -150px; */
-}
-
 @media (max-width: 1000px) {
   .down-arrow {
     display: none;
   }
+}
+
+a {
+  position: relative;
+  /* z-index: 50; */
 }
 
 h1 {
